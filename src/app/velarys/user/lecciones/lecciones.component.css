@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #4b0082; /* Color morado oscuro */
+  background-color: #4b0082;
   color: white;
   padding: 10px 20px;
 }
@@ -14,7 +14,7 @@
 
 .title h1 {
   margin: 0;
-  font-size: 40px; /* Tamaño del título */
+  font-size: 40px;
 }
 
 .actions .btn-cerrar-sesion {
@@ -40,7 +40,7 @@
 }
 
 .encabezado h2 {
-  color: #8b1d99; /* Color morado claro */
+  color: #8b1d99;
   margin: 0;
   font-size: 40px;
 }
@@ -50,13 +50,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 40px auto; /* Ajustar el margen superior e inferior */
-  max-width: 1000px; /* Ampliar el ancho máximo */
-  padding: 30px; /* Aumentar el padding */
-  border: 2px solid #8b1d99; /* Color morado claro para el borde */
+  margin: 40px auto;
+  max-width: 1000px;
+  padding: 30px;
+  border: 2px solid #8b1d99;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9; /* Fondo claro para el carrusel */
+  background-color: #f9f9f9;
 }
 
 .leccion-item {
@@ -65,19 +65,19 @@
 }
 
 .leccion-item h2 {
-  color: #6206a3; /* Color morado oscuro */
+  color: #6206a3;
   margin: 0;
-  font-size: 32px; /* Aumentar el tamaño del título */
+  font-size: 32px;
 }
 
 .leccion-item p {
   margin: 10px 0;
-  font-size: 20px; /* Aumentar el tamaño del texto */
+  font-size: 20px;
 }
 
 .leccion-carousel button {
-  padding: 15px 25px; /* Aumentar el padding de los botones */
-  background-color: #8b1d99; /* Color morado claro */
+  padding: 15px 25px;
+  background-color: #8b1d99;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -87,29 +87,29 @@
 }
 
 .leccion-carousel button:hover {
-  background-color: #6206a3; /* Color morado oscuro para hover */
+  background-color: #6206a3;
 }
 
 .leccion-item button {
-  display: block;       /* Mostrar los botones como elementos en bloque para que estén uno debajo del otro */
-  margin: 10px auto;    /* Añadir un margen entre los botones */
-  width: 60%;           /* Hacer que los botones ocupen el 60% del ancho del contenedor */
+  display: block;
+  margin: 10px auto;
+  width: 60%;
 }
 
 .leccion-item .btn-ayuda {
-  background-color: red; /* Forzamos el color rojo */
-  color: white;          /* Color de texto blanco */
-  border: none;          /* Sin borde */
-  padding: 15px 25px;    /* Ajustar el padding */
-  border-radius: 5px;    /* Bordes redondeados */
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease;
-  margin-top: 10px;     /* Añadir un margen superior al botón "Ayuda" para separarlo del botón de arriba */
+  margin-top: 10px;
 }
 
 .leccion-item .btn-ayuda:hover {
-  background-color: firebrick; /* Cambia el color a rojo oscuro cuando se pasa el ratón por encima */
+  background-color: firebrick;
 }
 
 .video-list {
@@ -121,7 +121,7 @@
 }
 
 .video-container {
-  flex: 1 1 45%; /* Dos videos por fila con un ancho del 45% */
+  flex: 1 1 45%;
   max-width: 45%;
   margin: 20px 0;
 }
@@ -136,107 +136,69 @@
 
 .video-list h3 {
   text-align: center;
-  font-size: 28px; /* Tamaño del texto */
-  color: #6206a3; /* Color morado oscuro */
+  font-size: 28px;
+  color: #6206a3;
   margin-bottom: 40px;
   font-weight: bold;
-  text-transform: uppercase; /* Convertir texto a mayúsculas */
-  width: 100%; /* Asegura que el texto ocupe todo el ancho disponible */
+  text-transform: uppercase;
+  width: 100%;
 }
-
 
 .leccion-carousel button[disabled] {
-  background-color: #d78c8c; /* Color gris claro para botones deshabilitados */
+  background-color: #d78c8c;
   cursor: not-allowed;
-}
-
-.audio-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px;
-  margin: 20px 0;
-}
-
-.audio-container {
-  flex: 1 1 45%; /* Dos canciones por fila con un ancho del 45% */
-  max-width: 45%;
-  margin: 20px 0;
-  text-align: center;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: #f9f9f9; /* Fondo claro */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.audio-container audio {
-  width: 100%; /* Asegura que el reproductor de audio ocupe el ancho completo */
-  margin-top: 10px;
-}
-
-.audio-container a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #6206a3; /* Color morado oscuro */
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.audio-container a:hover {
-  text-decoration: underline;
 }
 
 /* Estilos para las canciones */
 .audio-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Asegura espacio entre los contenedores */
-  gap: 20px; /* Espaciado entre elementos */
-  margin: 40px auto; /* Centra la lista con margen superior e inferior */
-  max-width: 1200px; /* Ancho máximo de la lista */
+  justify-content: space-between;
+  gap: 20px;
+  margin: 40px auto;
+  max-width: 1200px;
   padding: 20px;
-  background-color: #f3f3f3; /* Fondo claro */
-  border-radius: 15px; /* Bordes redondeados */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  background-color: #f3f3f3;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .audio-container {
-  flex: 1 1 45%; /* Dos canciones por fila con un ancho del 45% */
-  max-width: 45%; /* Limita el ancho máximo */
-  text-align: center; /* Centra el contenido */
+  flex: 1 1 45%;
+  max-width: 45%;
+  text-align: center;
   padding: 20px;
-  border: 2px solid #8b1d99; /* Color morado para el borde */
-  border-radius: 10px; /* Bordes redondeados */
-  background-color: #fff; /* Fondo blanco */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+  border: 2px solid #8b1d99;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .audio-container:hover {
-  transform: translateY(-5px); /* Eleva ligeramente al pasar el ratón */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .audio-container p {
   margin: 10px 0;
-  font-size: 18px; /* Tamaño del texto */
+  font-size: 18px;
   font-weight: bold;
-  color: #6206a3; /* Color morado oscuro */
-  text-align: center; /* Asegura que el texto esté centrado */
+  color: #6206a3;
+  text-align: center;
 }
 
 .audio-container audio {
-  width: 100%; /* Asegura que el reproductor ocupe el ancho completo */
+  width: 100%;
   margin-top: 10px;
-  border-radius: 5px; /* Bordes redondeados */
+  border-radius: 5px;
 }
 
 .audio-container a {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #8b1d99; /* Color morado */
+  background-color: #8b1d99;
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -246,19 +208,19 @@
 }
 
 .audio-container a:hover {
-  background-color: #6206a3; /* Color morado oscuro al pasar el ratón */
-  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
-  text-decoration: none; /* Asegura que el texto no tenga subrayado */
+  background-color: #6206a3;
+  transform: scale(1.05);
+  text-decoration: none;
 }
 
 .audio-list h3 {
   text-align: center;
   font-size: 28px;
-  color: #4b0082; /* Color morado oscuro */
+  color: #4b0082;
   margin-bottom: 20px;
   font-weight: bold;
   text-transform: uppercase;
-  width: 100%; /* Asegura que el texto ocupe todo el ancho disponible */
+  width: 100%;
 }
 
 /* Contenedor de la barra de búsqueda */
@@ -266,23 +228,22 @@
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #f1f1f1; /* Fondo claro */
-  border: 2px solid #8b1d99; /* Borde morado claro */
+  background-color: #f1f1f1;
+  border: 2px solid #8b1d99;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .search-container h2 {
   font-size: 28px;
   margin-bottom: 20px;
-  color: #4b0082; /* Morado oscuro */
+  color: #4b0082;
   font-weight: bold;
 }
 
-/* Estilo del cuadro de búsqueda */
 .gsc-input-box {
-  border: 2px solid #8b1d99; /* Borde morado claro */
+  border: 2px solid #8b1d99;
   border-radius: 5px;
   padding: 10px;
   font-size: 16px;
@@ -293,12 +254,12 @@
 }
 
 .gsc-input-box:hover {
-  border-color: #6206a3; /* Borde morado oscuro al pasar el cursor */
+  border-color: #6206a3;
 }
 
 .gsc-search-button {
   padding: 10px 20px;
-  background-color: #8b1d99; /* Morado claro */
+  background-color: #8b1d99;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -309,50 +270,169 @@
 }
 
 .gsc-search-button:hover {
-  background-color: #6206a3; /* Morado oscuro para hover */
+  background-color: #6206a3;
   transform: scale(1.05);
 }
 
-/* Resultados de búsqueda */
 .gsc-results-wrapper {
   margin-top: 20px;
   padding: 20px;
-  background-color: #ffffff; /* Fondo blanco */
-  border: 2px solid #8b1d99; /* Borde morado claro */
+  background-color: #ffffff;
+  border: 2px solid #8b1d99;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Títulos de los resultados */
 .gsc-webResult .gsc-result .gsc-title {
   font-size: 18px;
-  color: #4b0082; /* Morado oscuro */
+  color: #4b0082;
   font-weight: bold;
   text-decoration: none;
 }
 
 .gsc-webResult .gsc-result .gsc-title:hover {
-  color: #6206a3; /* Morado más intenso al pasar el cursor */
+  color: #6206a3;
   text-decoration: underline;
 }
 
-/* Snippet de los resultados */
 .gsc-webResult .gsc-result .gsc-url {
   font-size: 14px;
-  color: #8b1d99; /* Morado claro */
+  color: #8b1d99;
 }
 
 .gsc-webResult .gsc-result .gs-bidi-start-align {
   font-size: 16px;
-  color: #333; /* Texto del snippet */
+  color: #333;
 }
 
-/* Ajustes generales */
 .gsc-results .gsc-cursor-page {
-  color: #8b1d99; /* Numeración morada */
+  color: #8b1d99;
   font-weight: bold;
 }
 
 .gsc-results .gsc-cursor-page:hover {
-  color: #6206a3; /* Numeración más intensa al pasar el cursor */
+  color: #6206a3;
+}
+
+/* Media Queries para diseño responsivo */
+
+/* Tablets y pantallas medianas */
+@media screen and (max-width: 1024px) {
+  .leccion-carousel {
+    padding: 20px;
+    margin: 30px auto;
+  }
+
+  .leccion-item h2 {
+    font-size: 28px;
+  }
+
+  .leccion-item p {
+    font-size: 18px;
+  }
+
+  .video-container,
+  .audio-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .search-container {
+    padding: 15px;
+  }
+}
+
+/* Dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .logo img {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .leccion-carousel {
+    flex-direction: column;
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .leccion-item {
+    margin: 10px 0;
+  }
+
+  .leccion-item h2 {
+    font-size: 24px;
+  }
+
+  .leccion-item p {
+    font-size: 16px;
+  }
+
+  .leccion-item button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .video-list h3,
+  .audio-list h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .search-container h2 {
+    font-size: 24px;
+  }
+
+  .gsc-search-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* Dispositivos móviles pequeños */
+@media screen and (max-width: 480px) {
+  .leccion-item h2 {
+    font-size: 20px;
+  }
+
+  .leccion-item p {
+    font-size: 14px;
+  }
+
+  .leccion-carousel button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .video-list h3,
+  .audio-list h3 {
+    font-size: 20px;
+  }
+
+  .audio-container p {
+    font-size: 16px;
+  }
+
+  .audio-container a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .search-container {
+    padding: 10px;
+  }
+
+  .search-container h2 {
+    font-size: 20px;
+  }
+
+  .gsc-input-box {
+    padding: 8px;
+    font-size: 14px;
+  }
 }
